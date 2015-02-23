@@ -17,7 +17,7 @@ Vagrant.configure("2") do |config|
         chef.data_bags_path = ['data_bags']
         chef.add_recipe 'mpi::mpi_base'
         chef.add_recipe (hostno == 0) ? 'mpi::mpi_master' : 'mpi::mpi_worker'
-        chef.json = { hostno: hostno, hostcount: HOST_COUNT }
+        chef.json = { hostno: hostno, hostcount: HOST_COUNT, workdir: '/vagrant/workdir' }
       end
     end
   end

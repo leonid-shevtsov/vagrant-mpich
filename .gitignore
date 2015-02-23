@@ -1,3 +1,4 @@
 .vagrant
 /berks-cookbooks/
 data_bags/ssh/keys.json
+workdir/*
