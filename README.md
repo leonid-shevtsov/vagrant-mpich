@@ -19,7 +19,7 @@ Prerequisites: [Vagrant](https://www.vagrantup.com/), [chef-dk](https://download
 `vagrant ssh mpihost0` will get you into the master machine. From there,
 
     cd /vagrant/workdir
-    mpicc helloworld.c
+    mpicc hello_world.c
     mpiexec -f machinefile ./a.out
 
 By the way, `workdir` is the mounted to the host `workdir` directory, so you can write your code on the host machine, and compile and run in the cluster.
