@@ -1,0 +1,7 @@
+DEPENDENCIES
+  ssh_known_hosts
+
+GRAPH
+  partial_search (1.0.8)
+  ssh_known_hosts (2.0.0)
+    partial_search (>= 0.0.0)
