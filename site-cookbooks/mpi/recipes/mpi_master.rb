@@ -1,5 +1,5 @@
 file "#{node['workdir']}/machinefile" do
-  content (1..node['hostcount']-1).map{|i| "mpihost#{i}"}.join("\n")
+  content (0..node['hostcount']-1).map{|i| "192.168.50.#{100+node}"}.join("\n")
   owner 'vagrant'
   group 'vagrant'
 end
